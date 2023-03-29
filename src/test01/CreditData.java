@@ -1,7 +1,9 @@
+package test01;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ChekCreditData {
+public class CreditData {
     double creditsum, monthlyPayment, interestRate;
     String typeOfClient;
     Scanner in = new Scanner(System.in);
@@ -9,7 +11,7 @@ public class ChekCreditData {
     String first = in.nextLine();
     String[] first_buf = first.split(" ");
 
-    void chekData() throws Exception {
+    void getData() throws Exception {
         ArrayList<Double> ar = new ArrayList<>();
         for (int i = 0; i < first_buf.length - 1; i++) {
             ar.add(Double.parseDouble(first_buf[i]));
